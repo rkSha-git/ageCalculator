@@ -26,7 +26,11 @@ btn.addEventListener('click', function(){
         y3--;
         m3 += 12; 
     }
-
-    age.innerHTML = `You Are <span> ${y3} </span> years <span> ${m3} </span> months and <span> ${d3} </span> days old`;
+    if(y2 > y1){
+            age.innerHTML = `You Are Not Born Yet buddy :)`;
+    } else{
+            age.innerHTML = `You Are <span> ${y3} </span> years <span> ${m3} </span> months and <span> ${d3} </span> days old`;
+    }
+    
 
 });
